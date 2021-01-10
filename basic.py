@@ -21,5 +21,6 @@ def divide (x, y) {
 def power (number, exp) {
     result = number**exp
     return result
+
 }
 
