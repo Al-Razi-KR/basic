@@ -13,31 +13,29 @@ def menu():
         print(f"{item+len(medium_list)+1}. {medium_list[item]}")
 
 def choice():
-    user_choice = int(input("Enter your choice"))
+    user_choice = int(input("Enter your choice: "))
     if user_choice <= 0 or user_choice > 8:
         print("Invalid choice! Choose between 1-8.")
         menu()
         choice()
     elif user_choice <= 4:
-        x = int(input("Enter 1st number"))
-        y = int(input("Enter 2nd number"))
+        x = int(input("Enter 1st number: "))
+        y = int(input("Enter 2nd number: "))
         if user_choice == 1:
-            b.add(x, y)
+            print(b.add(x, y))
         elif user_choice == 2:
-            b.substract(x, y)
+            print(b.subtract(x, y))
         elif user_choice == 3:
-            b.multiply (x, y)
+            print(b.multiply (x, y))
         else:
-            b.power(x, y)
+            print(b.power(x, y))
     else:
-        x = int(input("Enter the number"))
+        x = int(input("Enter the number: "))
         if user_choice == 5:
-            m.square(x)
+            print(m.square(x))
         elif user_choice == 6:
-            m.root(x)
+            print(m.root(x))
         elif user_choice == 7:
-            m.sine(x)
+            print(m.sine(x))
         else:
-            m.lg(x)
-
-choice()
+            print(m.lg(x))
