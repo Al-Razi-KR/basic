@@ -1,4 +1,6 @@
-from Medium import *
+import basic as b
+import Medium as m
+
 
 def menu():
     basic_list = ["Add", "Substract", "Divide", "Power"]
@@ -10,6 +12,26 @@ def menu():
     for item in range(len(medium_list)):
         print(f"{item+len(medium_list)+1}. {medium_list[item]}")
 
+def choice():
+    user_choice = int(input("Enter your choice"))
+    if user_choice <= 0 or user_choice > 8:
+        print("Invalid choice! Choose between 1-8.")
+        menu()
+        choice()
+    elif user_choice <= 4:
+        x = int(input("Enter 1st number"))
+        y = int(input("Enter 2nd number"))
+        if user_choice == 1:
+            b.add(x, y)
+        elif user_choice == 2:
+            b.substract(x, y)
+        elif user_choice == 3:
+            b.multiply (x, y)
+        else:
+            b.power(x, y)
+    else:
+        x = int(input("Enter the number"))
 
 
-menu()
+
+choice()
