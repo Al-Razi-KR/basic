@@ -1,25 +1,25 @@
-def add (x, y) {
+def add (x, y):
     result = x + y
     return result
-}
 
-def substract (x, y) {
+
+def substract (x, y):
     result = x - y
     return result
-}
 
-def multiply (x, y) {
+
+def multiply (x, y):
     result = x * y
     return result
-}
 
-def divide (x, y) {
+
+def divide (x, y):
     result = x / y
     return result
-}
 
-def power (number, exp) {
-    result = number**exp
+
+def power (number, exp):
+    result = number ** exp
     return result
-}
+
 
