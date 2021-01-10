@@ -1,3 +1,5 @@
 import view as v
-v.menu()
+while (True):
+    v.menu()
+    v.choice()
 
