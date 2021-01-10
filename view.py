@@ -8,6 +8,8 @@ def menu():
         print(f"{item+1}. {basic_list[item]}")
     print("\nMedium")
     for item in range(len(medium_list)):
-        print(f"{item+1}. {medium_list[item]}")
+        print(f"{item+len(medium_list)+1}. {medium_list[item]}")
+
+
 
 menu()
