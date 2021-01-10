@@ -3,7 +3,7 @@ def square(x):
     return x*x
 
 def root(x):
-    return sqrt(x)
+    return m.sqrt(x)
 
 def sine(x):
     return m.sin(x)
