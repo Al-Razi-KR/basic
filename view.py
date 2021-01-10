@@ -4,7 +4,7 @@ import Medium as m
 
 def menu():
     basic_list = ["Add", "Substract", "Divide", "Power"]
-    medium_list = ["Root", "Square", "Sin", "Log"]
+    medium_list = ["Root", "Square", "Sine", "Log"]
     print("\nBasic")
     for item in range(len(basic_list)):
         print(f"{item+1}. {basic_list[item]}")
@@ -31,7 +31,13 @@ def choice():
             b.power(x, y)
     else:
         x = int(input("Enter the number"))
-
-
+        if user_choice == 5:
+            m.square(x)
+        elif user_choice == 6:
+            m.root(x)
+        elif user_choice == 7:
+            m.sine(x)
+        else:
+            m.lg(x)
 
 choice()
