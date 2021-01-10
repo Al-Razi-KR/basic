@@ -4,7 +4,7 @@ import Medium as m
 
 def menu():
     basic_list = ["Add", "Substract", "Divide", "Power"]
-    medium_list = ["Root", "Square", "Sine", "Log"]
+    medium_list = ["Square", "Root", "Sine", "Log"]
     print("\nBasic")
     for item in range(len(basic_list)):
         print(f"{item+1}. {basic_list[item]}")
