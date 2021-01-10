@@ -39,3 +39,4 @@ def choice():
             print(m.sine(x))
         else:
             print(m.lg(x))
+            
